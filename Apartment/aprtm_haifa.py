@@ -1,26 +1,36 @@
-from  apartment import Apartment
-from  arnona import Arnona
+import collections
+
+from apartment import Apartment
+from arnona import Arnona
+from log import Log
 from dotenv import load_dotenv
 import os
 
 
-class AprtmHaifa(Apartment,Arnona):
+class AprtmHaifa(Apartment, Arnona):
+    LOG = Log("__main__", "aprtm_haifa.log")
+    logger = LOG.logger
 
     def __init__(self, rooms):
-        self.arnona_cost = 30
-        self.rooms = rooms
-        self.city = 'Haifa'
-        self.price = 0
+        load_dotenv()
+        self.arnona_cost = float(os.getenv('ARNONA_COST_HAIFA'))
         super().__init__(rooms)
 
     def calc_arnona(self):
-        count = 0
+        return [v * 30 if k == 3 else (v * 0.5 * 30) for k, v in self.rooms.items()]
 
-        for a in self.rooms:
-            if count == 2:
-                self.price += self.arnona_cost * a.value
-                count += 1
+    def calc_apartment_price(self):
+        for r in self.rooms.values():
+            self.aprtm_price += r
+        self.aprtm_price *= self.arnona_cost
+        # return self.aprtm_price
+        return
 
-            else:
-                self.price += (self.arnona_cost * a.value) * 0.5
-                count += 1
+        #  aprtm_PRICE HERZELIA
+        # 1 - 50 X 1000 (60 X 1000 = 60000 )
+        # 50- 100 - 10% (60000+ 10 * 1100 )= 71000
+        # >100 - 12%
+
+        # Discount of arnona for Haifa 5%
+
+    # list of tuple
