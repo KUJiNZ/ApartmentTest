@@ -10,6 +10,7 @@ class Apartment(ABC):
         Description: init of abstract class Apartment
         :param rooms: metrage of apartment rooms
         """
+        self.aprtm_price = 0
         self.rooms = rooms
         self.meter = 0
         # self.kitchen = 'None'

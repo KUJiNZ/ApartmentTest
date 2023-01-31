@@ -9,13 +9,13 @@ if __name__ == '__main__':
     load_dotenv()
 
     # LOGGER
-    LOG = Log("__main__", "apartment_log_main.log")
+    LOG = Log("__aprtmmain__", "apartment_log_main.log")
     logger = LOG.logger
 
-    d = {1:12,2:13,3:15,4:20,5:100}
+    rooms = {1:12, 2:13, 3:15, 4:20, 5:100}
 
-    haifa = AprtmHaifa(d)
-    herz = AprtmHerz(d)
+    haifa = AprtmHaifa(rooms)
+    herz = AprtmHerz(rooms)
 
     print(haifa.calc_arnona())
     print(haifa.calc_apartment_price())
