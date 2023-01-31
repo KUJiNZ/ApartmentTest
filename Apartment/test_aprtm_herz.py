@@ -38,7 +38,7 @@ def test_calc_apartment_price(herz):
     """
     Name: Artiom
     Function Name: calc_apartment_price
-    Description: Test Calculating apartment price in Haifa
+    Description: Test Calculating apartment price in Herzelia
     """
     try:
         x = herz.calc_apartment_price()

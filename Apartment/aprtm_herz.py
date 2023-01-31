@@ -33,20 +33,21 @@ class AprtmHerz(Apartment, Arnona):
         """
         Name: Artiom
         Function Name: calc_apartment_price
-        Description: Calculating apartment price in Haifa
+        Description: Calculating apartment price in Herzelia
         :return apartment price
         """
         try:
             for m in self.rooms.values():
                 self.meter += m
-            temp = 0
+            prviuos_k = 0
+            metters_left = 0
             counter = {50: 1000, 100: 1100, 101: 1200}
             for k, v in counter.items():
                 if 0 < self.meter >= k:
-                    self.aprtm_price += (k - temp) * v
-                    temp += k
+                    self.aprtm_price += (k - prviuos_k) * v
+                    prviuos_k += k
                 else:
-                    self.aprtm_price += self.meter - (temp * v)
+                    self.aprtm_price += self.meter - (prviuos_k * v)
             return self.aprtm_price
         except Exception as e:
             raise e
