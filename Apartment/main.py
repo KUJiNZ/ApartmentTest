@@ -15,5 +15,10 @@ if __name__ == '__main__':
     d = {1:12,2:13,3:15,4:20,5:100}
 
     haifa = AprtmHaifa(d)
-    # herz = AprtmHerz(d)
+    herz = AprtmHerz(d)
+
     print(haifa.calc_arnona())
+    print(haifa.calc_apartment_price())
+
+    print(herz.calc_arnona())
+    print(herz.calc_apartment_price())
