@@ -4,46 +4,46 @@ import pytest
 import os
 from dotenv import load_dotenv
 from Apartment.log import Log
-from Apartment.aprtm_herz import AprtmHerz
+from Apartment.aprtm_haifa import AprtmHaifa
 
 # LOGGER
-LOG = Log("__herzytest__ ", "test_herz_log.log")
+LOG = Log("__haifaytest__ ", "test_herz_log.log")
 logger = LOG.logger
 
 
 @pytest.fixture
-def herz():
+def haifa():
     # ENV FILE
-    load_dotenv()
-    kitchen_type = os.getenv('KITCHEN_TYPE_HERZ')
-    # HERZ ClASS
+    load_dotenv('.env')
+    kitchen_type = os.getenv('KITCHEN_TYPE_HAIFA')
+    # HAIFA ClASS
     rooms = ast.literal_eval(os.getenv('ROOMS_HERZ'))
-    return AprtmHerz(rooms)
+    return AprtmHaifa(rooms)
 
 
-def test_setter_kitchen(herz):
+def test_setter_kitchen(haifa):
     """
     Name: Artiom
     Function Name: kitchen
-    Description: Testing setter of kitchen in class AprtmHerz
+    Description: Testing setter of kitchen in class AprtmHaifa
     """
     try:
-        herz._kitchen = os.getenv('KITCHEN_TYPE_HERZ')
-        assert herz._kitchen is os.getenv('KITCHEN_TYPE_HERZ')
+        haifa._kitchen = os.getenv('KITCHEN_TYPE_HERZ')
+        assert haifa._kitchen is os.getenv('KITCHEN_TYPE_HERZ')
         logger.info(f"{test_setter_kitchen.__doc__}")
     except Exception as e:
         logger.error(f"{test_setter_kitchen.__doc__}{e}")
         raise
 
 
-def test_getter_kitchen(herz):
+def test_getter_kitchen(haifa):
     """
     Name: Artiom
     Function Name: kitchen
-    Description: Testing getter of kitchen in class AprtmHerz
+    Description: Testing getter of kitchen in class AprtmHaifa
     """
     try:
-        x = herz._kitchen = os.getenv('KITCHEN_TYPE_HERZ')
+        x = haifa._kitchen = os.getenv('KITCHEN_TYPE_HERZ')
         assert x is os.getenv('KITCHEN_TYPE_HERZ')
         logger.info(f"{test_setter_kitchen.__doc__}")
     except Exception as e:
@@ -51,29 +51,30 @@ def test_getter_kitchen(herz):
         raise
 
 
-def test_deleter_kitchen(herz):
+def test_deleter_kitchen(haifa):
     """
     Name: Artiom
     Function Name: kitchen
-    Description: Testing getter of kitchen in class AprtmHerz
+    Description: Testing getter of kitchen in class AprtmHaifa
     """
     try:
-        del (herz._kitchen)
+        del (haifa._kitchen)
         with pytest.raises(AttributeError):
-            x = herz._kitchen
+            x = haifa._kitchen
         logger.info(f"{test_setter_kitchen.__doc__}")
     except Exception as e:
         logger.error(f"{test_setter_kitchen.__doc__}{e}")
         raise
 
-def test_validate_arnona_cost(herz):
+
+def test_validate_arnona_cost(haifa):
     """
     Name: Artiom
     Function Name: test_validate_arnona_cost
-    Description:Testing validating of arnona cost getting right number type and not None in class AprtmHerz
+    Description:Testing validating of arnona cost getting right number type and not None in class AprtmHaifa
     """
     try:
-        x = herz.validate_arnona_cost()
+        x = haifa.validate_arnona_cost()
         assert type(x) is float and not None
         logger.info(f"{test_calc_arnona.__doc__}")
     except Exception as e:
@@ -81,44 +82,29 @@ def test_validate_arnona_cost(herz):
         raise
 
 
-def test_calc_arnona(herz):
+def test_calc_arnona(haifa):
     """
     Name: Artiom
     Function Name: test_calc_arnona
-    Description: Testing Calculating arnona in Herzelia apartment
+    Description: Testing Calculating arnona in Haifa apartment
     """
     try:
-        x = herz.calc_arnona()
+        x = haifa.calc_arnona()
         assert type(x) is list and not None
         logger.info(f"{test_calc_arnona.__doc__}")
     except Exception as e:
         logger.error(f"{test_calc_arnona.__doc__}{e}")
         raise
 
-def test_count_meters(herz):
-    """
-    Name: Artiom
-    Function Name: calc_meters
-    Description: Testing counting apartment meters in Herzelia
-    :return: The meters of apartment
-    """
-    try:
-        x = herz.count_meters()
-        assert x is not None and x > 0
-        logger.info(f"{test_calc_arnona.__doc__}")
-    except Exception as e:
-        logger.error(f"{test_calc_arnona.__doc__}{e}")
-        raise
 
-
-def test_calc_apartment_price(herz):
+def test_calc_apartment_price(haifa):
     """
     Name: Artiom
     Function Name: calc_apartment_price
-    Description: Test Calculating apartment price in Herzelia
+    Description: Test Calculating apartment price in Haifa
     """
     try:
-        x = herz.calc_apartment_price()
+        x = haifa.calc_apartment_price()
         assert x > 0 and not None
         logger.info(f"{test_calc_arnona.__doc__}")
     except Exception as e:

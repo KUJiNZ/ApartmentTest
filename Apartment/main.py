@@ -6,7 +6,7 @@ import os
 
 if __name__ == '__main__':
     # ENV LOADER
-    load_dotenv()
+    load_dotenv('.env')
 
 
     rooms_haifa = ast.literal_eval(os.getenv('ROOMS_HAIFA'))
@@ -15,20 +15,14 @@ if __name__ == '__main__':
     haifa = AprtmHaifa(rooms_haifa)
     herz = AprtmHerz(rooms_herz)
 
-    print(haifa.calc_arnona())
-    print(haifa.calc_apartment_price())
-
-    print(herz.calc_arnona())
-    print(herz.calc_apartment_price())
-
-    haifa.kitchen=os.getenv('KITCHEN_TYPE_HAIFA')
+    print(f"Herzelia arnona cost: {herz.calc_arnona()}")
+    print(f"Herzelia apartment price: {herz.calc_apartment_price()}")
     herz.kitchen = os.getenv('KITCHEN_TYPE_HERZ')
+    print(f"Herzelia kitchen type : {herz.kitchen}")
 
-    print(haifa.kitchen)
-    print(herz.kitchen)
+    print("----------------------------------------------------------")
 
-    del(haifa.kitchen)
-    del (herz.kitchen)
-
-    # print(haifa.kitchen())
-    # print(herz.kitchen())
+    print(f"Haifa arnona cost: {haifa.calc_arnona()}")
+    print(f"Haifa apartment price: {haifa.calc_apartment_price()}")
+    haifa.kitchen = os.getenv('KITCHEN_TYPE_HAIFA')
+    print(f"Haifa kitchen type : {haifa.kitchen}")
