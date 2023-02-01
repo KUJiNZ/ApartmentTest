@@ -25,7 +25,8 @@ class AprtmHerz(Apartment, Arnona):
         """
         try:
             return [(v * float(os.getenv('ARNONA_COST_HERZ')) * float(os.getenv('DISCOUNT_ROOM_HERZ'))) if k == int(
-                os.getenv('ROOM_NUM_HERZ')) else v * float(os.getenv('ARNONA_COST_HERZ')) for k, v in self.rooms.items()]
+                os.getenv('ROOM_NUM_HERZ')) else v * float(os.getenv('ARNONA_COST_HERZ')) for k, v in
+                    self.rooms.items()]
         except Exception as e:
             raise e
 

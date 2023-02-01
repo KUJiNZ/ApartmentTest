@@ -12,12 +12,23 @@ class Apartment(ABC):
         Description: init of abstract class Apartment
         :param rooms: metrage of apartment rooms
         """
-        self.arnona_cost = float(os.getenv('ARNONA_COST_HERZ'))
+        self.arnona_cost = self.validate_arnona_cost()
         self.rooms = rooms
         self.meters = 0
         self.aprtm_price = 0
         self._kitchen = " "
 
+    def validate_arnona_cost(self):
+        """
+        Name: Artiom
+        Function Name: validate_arnona_cost
+        Description: Validating if arnona cost getting right number type and not None
+        :return: arnona cost
+        """
+        arnona_cost = float(os.getenv('ARNONA_COST_HERZ'))
+        if arnona_cost is None or str():
+            raise Exception
+        return arnona_cost
 
     @property
     def kitchen(self):

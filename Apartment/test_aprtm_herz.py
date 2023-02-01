@@ -25,7 +25,7 @@ def test_setter_kitchen(herz):
     """
     Name: Artiom
     Function Name: kitchen
-    Description: Testing setter of kitchen class AprtmHerz
+    Description: Testing setter of kitchen in class AprtmHerz
     """
     try:
         herz._kitchen = os.getenv('KITCHEN_TYPE_HERZ')
@@ -40,7 +40,7 @@ def test_getter_kitchen(herz):
     """
     Name: Artiom
     Function Name: kitchen
-    Description: Testing getter of kitchen class AprtmHerz
+    Description: Testing getter of kitchen in class AprtmHerz
     """
     try:
         x = herz._kitchen = os.getenv('KITCHEN_TYPE_HERZ')
@@ -55,7 +55,7 @@ def test_deleter_kitchen(herz):
     """
     Name: Artiom
     Function Name: kitchen
-    Description: Testing getter of kitchen class AprtmHerz
+    Description: Testing getter of kitchen in class AprtmHerz
     """
     try:
         del (herz._kitchen)
@@ -64,6 +64,20 @@ def test_deleter_kitchen(herz):
         logger.info(f"{test_setter_kitchen.__doc__}")
     except Exception as e:
         logger.error(f"{test_setter_kitchen.__doc__}{e}")
+        raise
+
+def test_validate_arnona_cost(herz):
+    """
+    Name: Artiom
+    Function Name: test_validate_arnona_cost
+    Description:Testing validating of arnona cost getting right number type and not None in class AprtmHerz
+    """
+    try:
+        x = herz.validate_arnona_cost()
+        assert type(x) is float and not None
+        logger.info(f"{test_calc_arnona.__doc__}")
+    except Exception as e:
+        logger.error(f"{test_calc_arnona.__doc__}{e}")
         raise
 
 
