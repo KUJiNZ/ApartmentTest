@@ -2,9 +2,11 @@ from Apartment.apartment import  Apartment
 from Apartment.arnona import Arnona
 from dotenv import load_dotenv
 import os
-
+import ast
 
 class AprtmHerz(Apartment, Arnona):
+    load_dotenv()
+
     def __init__(self, rooms):
         """
         Name: Artiom
@@ -12,8 +14,6 @@ class AprtmHerz(Apartment, Arnona):
         Description: init of AprtmHerz
         :param rooms: metrage of apartment rooms
         """
-        load_dotenv()
-        self.arnona_cost = float(os.getenv('ARNONA_COST_HERZ'))
         super().__init__(rooms)
 
     def calc_arnona(self):
@@ -41,8 +41,8 @@ class AprtmHerz(Apartment, Arnona):
                 self.meter += m
             prviuos_k = 0
             metters_left = 0
-            counter = {50: 1000, 100: 1100, 101: 1200}
-            for k, v in counter.items():
+            price_counter = ast.literal_eval(os.getenv('PRICE_COUNTER'))
+            for k, v in price_counter.items():
                 if 0 < self.meter >= k:
                     self.aprtm_price += (k - prviuos_k) * v
                     prviuos_k += k

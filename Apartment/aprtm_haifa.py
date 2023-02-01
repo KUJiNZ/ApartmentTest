@@ -5,6 +5,8 @@ import os
 
 
 class AprtmHaifa(Apartment, Arnona):
+    load_dotenv()
+
     def __init__(self, rooms):
         """
         Name: Artiom
@@ -12,8 +14,7 @@ class AprtmHaifa(Apartment, Arnona):
         Description: init of AprtmHaifa
         :param rooms: metrage of apartment rooms
         """
-        load_dotenv()
-        self.arnona_cost = float(os.getenv('ARNONA_COST_HAIFA'))
+
         super().__init__(rooms)
 
     def calc_arnona(self):

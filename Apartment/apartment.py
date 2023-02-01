@@ -1,8 +1,10 @@
 from abc import ABC, abstractmethod
+import os
+from dotenv import load_dotenv
 
 
 class Apartment(ABC):
-
+    load_dotenv()
     def __init__(self, rooms):
         """
         Name: Artiom
@@ -10,9 +12,10 @@ class Apartment(ABC):
         Description: init of abstract class Apartment
         :param rooms: metrage of apartment rooms
         """
-        self.aprtm_price = 0
+        self.arnona_cost = float(os.getenv('ARNONA_COST_HERZ'))
         self.rooms = rooms
         self.meter = 0
+        self.aprtm_price = 0
         # self.kitchen = 'None'
 
     @property

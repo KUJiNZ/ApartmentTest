@@ -1,21 +1,19 @@
+import ast
 from aprtm_haifa import AprtmHaifa
 from aprtm_herz import AprtmHerz
 from dotenv import load_dotenv
-from log import Log
 import os
 
 if __name__ == '__main__':
-    # ENV FILE
+    # ENV LOADER
     load_dotenv()
 
-    # LOGGER
-    LOG = Log("__aprtmmain__", "apartment_log_main.log")
-    logger = LOG.logger
 
-    rooms = {1:12, 2:13, 3:15, 4:20, 5:100}
+    rooms_haifa = ast.literal_eval(os.getenv('ROOMS_HAIFA'))
+    rooms_herz = ast.literal_eval(os.getenv('ROOMS_HERZ'))
 
-    haifa = AprtmHaifa(rooms)
-    herz = AprtmHerz(rooms)
+    haifa = AprtmHaifa(rooms_haifa)
+    herz = AprtmHerz(rooms_herz)
 
     print(haifa.calc_arnona())
     print(haifa.calc_apartment_price())
