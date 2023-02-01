@@ -21,6 +21,7 @@ def haifa():
     return AprtmHaifa(rooms)
 
 
+@pytest.mark.haifa_test_setter_kitchen
 def test_setter_kitchen(haifa):
     """
     Name: Artiom
@@ -30,12 +31,14 @@ def test_setter_kitchen(haifa):
     try:
         haifa._kitchen = os.getenv('KITCHEN_TYPE_HERZ')
         assert haifa._kitchen is os.getenv('KITCHEN_TYPE_HERZ')
-        logger.info(f"{test_setter_kitchen.__doc__}")
+        logger.info(
+            f"{test_setter_kitchen.__doc__}\nActual: {haifa._kitchen} Expected: {os.getenv('KITCHEN_TYPE_HERZ')}\n")
     except Exception as e:
-        logger.error(f"{test_setter_kitchen.__doc__}{e}")
+        logger.error(f"{test_setter_kitchen.__doc__}{e}\n")
         raise
 
 
+@pytest.mark.haifa_test_getter_kitchen
 def test_getter_kitchen(haifa):
     """
     Name: Artiom
@@ -45,12 +48,13 @@ def test_getter_kitchen(haifa):
     try:
         x = haifa._kitchen = os.getenv('KITCHEN_TYPE_HERZ')
         assert x is os.getenv('KITCHEN_TYPE_HERZ')
-        logger.info(f"{test_setter_kitchen.__doc__}")
+        logger.info(f"{test_setter_kitchen.__doc__}\nActual: {x} Expected: {os.getenv('KITCHEN_TYPE_HERZ')}\n")
     except Exception as e:
-        logger.error(f"{test_setter_kitchen.__doc__}{e}")
+        logger.error(f"{test_setter_kitchen.__doc__}{e}\n")
         raise
 
 
+@pytest.mark.haifa_test_deleter_kitchen
 def test_deleter_kitchen(haifa):
     """
     Name: Artiom
@@ -61,12 +65,13 @@ def test_deleter_kitchen(haifa):
         del (haifa._kitchen)
         with pytest.raises(AttributeError):
             x = haifa._kitchen
-        logger.info(f"{test_setter_kitchen.__doc__}")
+        logger.info(f"{test_setter_kitchen.__doc__}\nActual: {AttributeError} Expected: {AttributeError}\n")
     except Exception as e:
-        logger.error(f"{test_setter_kitchen.__doc__}{e}")
+        logger.error(f"{test_setter_kitchen.__doc__}{e}\n")
         raise
 
 
+@pytest.mark.haifa_test_validate_arnona_cost
 def test_validate_arnona_cost(haifa):
     """
     Name: Artiom
@@ -76,12 +81,13 @@ def test_validate_arnona_cost(haifa):
     try:
         x = haifa.validate_arnona_cost()
         assert type(x) is float and not None
-        logger.info(f"{test_calc_arnona.__doc__}")
+        logger.info(f"{test_calc_arnona.__doc__}\nActual: {type(x)} Expected: {float}\n")
     except Exception as e:
-        logger.error(f"{test_calc_arnona.__doc__}{e}")
+        logger.error(f"{test_calc_arnona.__doc__}{e}\n")
         raise
 
 
+@pytest.mark.haifa_test_calc_arnona
 def test_calc_arnona(haifa):
     """
     Name: Artiom
@@ -91,12 +97,13 @@ def test_calc_arnona(haifa):
     try:
         x = haifa.calc_arnona()
         assert type(x) is float and not None
-        logger.info(f"{test_calc_arnona.__doc__}")
+        logger.info(f"{test_calc_arnona.__doc__}\nActual: {type(x)} Expected: {float}\n")
     except Exception as e:
-        logger.error(f"{test_calc_arnona.__doc__}{e}")
+        logger.error(f"{test_calc_arnona.__doc__}{e}\n")
         raise
 
 
+@pytest.mark.haifa_test_calc_apartment_price
 def test_calc_apartment_price(haifa):
     """
     Name: Artiom
@@ -106,7 +113,7 @@ def test_calc_apartment_price(haifa):
     try:
         x = haifa.calc_apartment_price()
         assert x > 0 and not None
-        logger.info(f"{test_calc_arnona.__doc__}")
+        logger.info(f"{test_calc_arnona.__doc__}\nActual: {x} Expected: (x > 0 and not None)\n")
     except Exception as e:
-        logger.error(f"{test_calc_arnona.__doc__}{e}")
+        logger.error(f"{test_calc_arnona.__doc__}{e}\n")
         raise

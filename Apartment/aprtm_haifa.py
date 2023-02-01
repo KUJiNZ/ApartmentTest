@@ -42,7 +42,7 @@ class AprtmHaifa(Apartment, Arnona):
             # COUNTING ALL METERS OF APARTMENT
             self.count_meters()
             # GETTING LIST OF PRICES IN ENV
-            price_counter = ast.literal_eval(os.getenv('PRICE_COUNTER_HERZ'))
+            price_counter = ast.literal_eval(os.getenv('PRICE_COUNTER_HAIFA'))
             # pre_v helping to count current price after passing to next percent in price
             pre_v = 0
             # LOOP PASSING IN LIST OF PRICES AND COUNTING APARTMENT PRICE
