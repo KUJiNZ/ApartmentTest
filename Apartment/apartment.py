@@ -16,7 +16,8 @@ class Apartment(ABC):
         self.rooms = rooms
         self.meter = 0
         self.aprtm_price = 0
-        # self.kitchen = 'None'
+        self._kitchen = " "
+
 
     @property
     def kitchen(self):
@@ -25,7 +26,7 @@ class Apartment(ABC):
         Function Name: kitchen
         Description: property of kitchen
         """
-        self.kitchen()
+        return self._kitchen
 
     @kitchen.getter
     def kitchen(self):
@@ -34,16 +35,16 @@ class Apartment(ABC):
         Function Name: kitchen
         Description: Getter of kitchen
         """
-        return self.kitchen
+        return self._kitchen
 
     @kitchen.setter
-    def kitchen(self, x=''):
+    def kitchen(self, x):
         """
         Name: Artiom
         Function Name: kitchen
         Description: Setter of kitchen
         """
-        self.kitchen = x
+        self._kitchen = x
 
     @kitchen.deleter
     def kitchen(self):
@@ -52,7 +53,7 @@ class Apartment(ABC):
         Function Name: kitchen
         Description: Deleter of kitchen
         """
-        del self.kitchen
+        del self._kitchen
 
     @abstractmethod
     def calc_apartment_price(self):

@@ -38,7 +38,7 @@ class AprtmHaifa(Apartment, Arnona):
         """
         try:
             for r in self.rooms.values():
-                self.aprtm_price += r * self.arnona_cost
+                self.aprtm_price += r * float(os.getenv('METER_PRICE_HAIFA'))
             return self.aprtm_price
         except Exception as e:
             raise e

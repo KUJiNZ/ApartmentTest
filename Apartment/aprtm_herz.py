@@ -41,7 +41,7 @@ class AprtmHerz(Apartment, Arnona):
                 self.meter += m
             prviuos_k = 0
             metters_left = 0
-            price_counter = ast.literal_eval(os.getenv('PRICE_COUNTER'))
+            price_counter = ast.literal_eval(os.getenv('PRICE_COUNTER_HERZ'))
             for k, v in price_counter.items():
                 if 0 < self.meter >= k:
                     self.aprtm_price += (k - prviuos_k) * v

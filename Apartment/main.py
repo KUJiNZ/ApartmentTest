@@ -20,3 +20,15 @@ if __name__ == '__main__':
 
     print(herz.calc_arnona())
     print(herz.calc_apartment_price())
+
+    haifa.kitchen=os.getenv('KITCHEN_TYPE_HAIFA')
+    herz.kitchen = os.getenv('KITCHEN_TYPE_HERZ')
+
+    print(haifa.kitchen)
+    print(herz.kitchen)
+
+    del(haifa.kitchen)
+    del (herz.kitchen)
+
+    # print(haifa.kitchen())
+    # print(herz.kitchen())
