@@ -14,7 +14,7 @@ class Apartment(ABC):
         """
         self.arnona_cost = float(os.getenv('ARNONA_COST_HERZ'))
         self.rooms = rooms
-        self.meter = 0
+        self.meters = 0
         self.aprtm_price = 0
         self._kitchen = " "
 

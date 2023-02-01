@@ -44,3 +44,12 @@ class AprtmHaifa(Apartment, Arnona):
             raise e
 
 
+    def count_meters(self):
+        """
+        Name: Artiom
+        Function Name: calc_meters
+        Description: Counting apartment meters in Haifa
+        :return: The meters of apartment
+        """
+        for m in self.rooms.values():
+            self.meters += m

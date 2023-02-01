@@ -1,50 +1,152 @@
-01/31/2023 11:11:52PM __herzytest__ ERROR: 
+02/01/2023 10:25:00AM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+     
+02/01/2023 10:25:00AM __herzytest__ ERROR: 
     Name: Artiom
     Function Name: test_calc_arnona
     Description: Testing Calculating arnona in Herzelia apartment
-    assert [600.0, 650.0, 750.0, 500.0, 5000.0] is list 
-01/31/2023 11:11:52PM __herzytest__ INFO: 
+    'str' object has no attribute 'items' 
+02/01/2023 10:25:00AM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    'str' object has no attribute 'values' 
+02/01/2023 10:30:07AM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+     
+02/01/2023 10:30:07AM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    'str' object has no attribute 'items' 
+02/01/2023 10:30:07AM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    'str' object has no attribute 'values' 
+02/01/2023 10:31:26AM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+     
+02/01/2023 10:31:26AM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    'str' object has no attribute 'items' 
+02/01/2023 10:31:26AM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    'str' object has no attribute 'values' 
+02/01/2023 10:31:52AM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+     
+02/01/2023 10:31:52AM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    'str' object has no attribute 'items' 
+02/01/2023 10:31:52AM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    'str' object has no attribute 'values' 
+02/01/2023 10:32:48AM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+     
+02/01/2023 10:32:48AM __herzytest__ INFO: 
     Name: Artiom
     Function Name: test_calc_arnona
     Description: Testing Calculating arnona in Herzelia apartment
      
-01/31/2023 11:12:12PM __haifaytest__ ERROR: 
+02/01/2023 10:32:48AM __herzytest__ ERROR: 
     Name: Artiom
     Function Name: test_calc_arnona
-    Description: Testing Calculating arnona in Haifa apartment
-    assert [360.0, 390.0, 225.0, 600.0, 3000.0] is list 
-01/31/2023 11:12:12PM __haifaytest__ INFO: 
+    Description: Testing Calculating arnona in Herzelia apartment
+    assert (-64896 > 0) 
+02/01/2023 10:42:37AM __herzytest__ ERROR: 
     Name: Artiom
-    Function Name: test_calc_arnona
-    Description: Testing Calculating arnona in Haifa apartment
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+    'AprtmHerz' object has no attribute '_kitchen' 
+02/01/2023 10:43:33AM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+    assert ' ' is 'ZIV'
+ +  where 'ZIV' = <function getenv at 0x0000024404BA20C0>('KITCHEN_TYPE_HERZ')
+ +    where <function getenv at 0x0000024404BA20C0> = os.getenv 
+02/01/2023 10:44:01AM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
      
-01/31/2023 11:13:15PM __herzytest__ INFO: 
+02/01/2023 10:44:23AM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+    'AprtmHerz' object has no attribute '_kitchen' 
+02/01/2023 10:44:50AM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+    'AprtmHerz' object has no attribute '_kitchen' 
+02/01/2023 10:45:40AM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+    'AprtmHerz' object has no attribute '_kitchen' 
+02/01/2023 10:48:27AM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+     
+02/01/2023 10:48:46AM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+     
+02/01/2023 10:49:28AM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+     
+02/01/2023 10:49:28AM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+     
+02/01/2023 10:49:28AM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen class AprtmHerz
+     
+02/01/2023 10:49:28AM __herzytest__ INFO: 
     Name: Artiom
     Function Name: test_calc_arnona
     Description: Testing Calculating arnona in Herzelia apartment
      
-01/31/2023 11:13:15PM __herzytest__ INFO: 
+02/01/2023 10:49:28AM __herzytest__ ERROR: 
     Name: Artiom
     Function Name: test_calc_arnona
     Description: Testing Calculating arnona in Herzelia apartment
-     
-01/31/2023 11:13:19PM __haifaytest__ INFO: 
+    assert (-64896 > 0) 
+02/01/2023 10:58:01AM __herzytest__ ERROR: 
     Name: Artiom
     Function Name: test_calc_arnona
-    Description: Testing Calculating arnona in Haifa apartment
-     
-01/31/2023 11:13:19PM __haifaytest__ INFO: 
+    Description: Testing Calculating arnona in Herzelia apartment
+    '>' not supported between instances of 'NoneType' and 'int' 
+02/01/2023 10:58:51AM __herzytest__ INFO: 
     Name: Artiom
     Function Name: test_calc_arnona
-    Description: Testing Calculating arnona in Haifa apartment
-     
-02/01/2023 09:25:29AM __haifaytest__ INFO: 
-    Name: Artiom
-    Function Name: test_calc_arnona
-    Description: Testing Calculating arnona in Haifa apartment
-     
-02/01/2023 09:25:29AM __haifaytest__ INFO: 
-    Name: Artiom
-    Function Name: test_calc_arnona
-    Description: Testing Calculating arnona in Haifa apartment
+    Description: Testing Calculating arnona in Herzelia apartment
      

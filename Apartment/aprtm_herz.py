@@ -37,17 +37,30 @@ class AprtmHerz(Apartment, Arnona):
         :return apartment price
         """
         try:
-            for m in self.rooms.values():
-                self.meter += m
-            prviuos_k = 0
-            metters_left = 0
+            self.count_meters()
+
+            meters_left = self.meters
+            previous_k = 0
             price_counter = ast.literal_eval(os.getenv('PRICE_COUNTER_HERZ'))
+
             for k, v in price_counter.items():
-                if 0 < self.meter >= k:
-                    self.aprtm_price += (k - prviuos_k) * v
-                    prviuos_k += k
+                if 0 < self.meters >= k:
+                    self.aprtm_price += (k - previous_k) * v
+                    previous_k = k
                 else:
-                    self.aprtm_price += self.meter - (prviuos_k * v)
+                    self.aprtm_price += meters_left * v
             return self.aprtm_price
+
         except Exception as e:
             raise e
+
+    def count_meters(self):
+        """
+        Name: Artiom
+        Function Name: calc_meters
+        Description: Counting apartment meters in Herzelia
+        :return: The meters of apartment
+        """
+        for m in self.rooms.values():
+            self.meters += m
+        return self.meters
