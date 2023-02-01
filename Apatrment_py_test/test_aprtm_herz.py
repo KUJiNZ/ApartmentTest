@@ -36,7 +36,7 @@ def test_setter_kitchen(herz):
             f"{test_setter_kitchen.__doc__}\nActual: {herz._kitchen} Expected:{os.getenv('KITCHEN_TYPE_HERZ')}\n")
         print(herz._kitchen)
     except Exception as e:
-        logger.error(f"{test_setter_kitchen.__doc__}{e}\n")
+        logger.exception(f"{test_setter_kitchen.__doc__}{e}\n")
         raise
 
 
@@ -52,7 +52,7 @@ def test_getter_kitchen(herz):
         assert x is os.getenv('KITCHEN_TYPE_HERZ')
         logger.info(f"{test_setter_kitchen.__doc__} \nActual: {x} Expected:{os.getenv('KITCHEN_TYPE_HERZ')}\n")
     except Exception as e:
-        logger.error(f"{test_setter_kitchen.__doc__}{e}\n")
+        logger.exception(f"{test_setter_kitchen.__doc__}{e}\n")
         raise
 
 
@@ -69,7 +69,7 @@ def test_deleter_kitchen(herz):
             x = herz._kitchen
         logger.info(f"{test_setter_kitchen.__doc__} \nActual: {AttributeError} Expected: {AttributeError}\n")
     except Exception as e:
-        logger.error(f"{test_setter_kitchen.__doc__}{e}\n")
+        logger.exception(f"{test_setter_kitchen.__doc__}{e}\n")
         raise
 
 
@@ -85,7 +85,7 @@ def test_validate_arnona_cost(herz):
         assert type(x) is float and not None
         logger.info(f"{test_calc_arnona.__doc__}\nActual: {type(x)} Expected: (float and not None)\n")
     except Exception as e:
-        logger.error(f"{test_calc_arnona.__doc__}{e}\n")
+        logger.exception(f"{test_calc_arnona.__doc__}{e}\n")
         raise
 
 
@@ -102,7 +102,7 @@ def test_calc_arnona(herz):
         assert type(x) is float and x is not None
         logger.info(f"{test_calc_arnona.__doc__}\nActual: {type(x)} Expected: (float and not None)\n")
     except Exception as e:
-        logger.error(f"{test_calc_arnona.__doc__}{e}\n")
+        logger.exception(f"{test_calc_arnona.__doc__}{e}\n")
         raise
 
 
@@ -119,7 +119,7 @@ def test_count_meters(herz):
         assert x is not None and x > 0
         logger.info(f"{test_calc_arnona.__doc__}\nActual: {x} Expected:(x > 0 and not None)\n")
     except Exception as e:
-        logger.error(f"{test_calc_arnona.__doc__}{e}")
+        logger.exception(f"{test_calc_arnona.__doc__}{e}")
         raise
 
 @pytest.mark.herz_test_calc_apartment_price
@@ -134,5 +134,5 @@ def test_calc_apartment_price(herz):
         assert x > 0 and not None
         logger.info(f"{test_calc_apartment_price.__doc__}\nActual: {x} Expected:(x > 0 and not None)\n")
     except Exception as e:
-        logger.error(f"{test_calc_apartment_price.__doc__}{e}\n")
+        logger.exception(f"{test_calc_apartment_price.__doc__}{e}\n")
         raise

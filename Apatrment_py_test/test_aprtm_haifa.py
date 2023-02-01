@@ -34,7 +34,7 @@ def test_setter_kitchen(haifa):
         logger.info(
             f"{test_setter_kitchen.__doc__}\nActual: {haifa._kitchen} Expected: {os.getenv('KITCHEN_TYPE_HERZ')}\n")
     except Exception as e:
-        logger.error(f"{test_setter_kitchen.__doc__}{e}\n")
+        logger.exception(f"{test_setter_kitchen.__doc__}{e}\n")
         raise
 
 
@@ -50,7 +50,7 @@ def test_getter_kitchen(haifa):
         assert x is os.getenv('KITCHEN_TYPE_HERZ')
         logger.info(f"{test_setter_kitchen.__doc__}\nActual: {x} Expected: {os.getenv('KITCHEN_TYPE_HERZ')}\n")
     except Exception as e:
-        logger.error(f"{test_setter_kitchen.__doc__}{e}\n")
+        logger.exception(f"{test_setter_kitchen.__doc__}{e}\n")
         raise
 
 
@@ -67,7 +67,7 @@ def test_deleter_kitchen(haifa):
             x = haifa._kitchen
         logger.info(f"{test_setter_kitchen.__doc__}\nActual: {AttributeError} Expected: {AttributeError}\n")
     except Exception as e:
-        logger.error(f"{test_setter_kitchen.__doc__}{e}\n")
+        logger.exception(f"{test_setter_kitchen.__doc__}{e}\n")
         raise
 
 
@@ -83,7 +83,7 @@ def test_validate_arnona_cost(haifa):
         assert type(x) is float and not None
         logger.info(f"{test_calc_arnona.__doc__}\nActual: {type(x)} Expected: {float}\n")
     except Exception as e:
-        logger.error(f"{test_calc_arnona.__doc__}{e}\n")
+        logger.exception(f"{test_calc_arnona.__doc__}{e}\n")
         raise
 
 
@@ -99,7 +99,7 @@ def test_calc_arnona(haifa):
         assert type(x) is float and not None
         logger.info(f"{test_calc_arnona.__doc__}\nActual: {type(x)} Expected: {float}\n")
     except Exception as e:
-        logger.error(f"{test_calc_arnona.__doc__}{e}\n")
+        logger.exception(f"{test_calc_arnona.__doc__}{e}\n")
         raise
 
 
@@ -115,5 +115,5 @@ def test_calc_apartment_price(haifa):
         assert x > 0 and not None
         logger.info(f"{test_calc_arnona.__doc__}\nActual: {x} Expected: (x > 0 and not None)\n")
     except Exception as e:
-        logger.error(f"{test_calc_arnona.__doc__}{e}\n")
+        logger.exception(f"{test_calc_arnona.__doc__}{e}\n")
         raise

@@ -145,3 +145,234 @@ Actual: 101 Expected:(x > 0 and not None)
     
 Actual: 106200 Expected:(x > 0 and not None)
  
+02/01/2023 02:33:48PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+    
+Actual: ZIVO Expected:ZIVO
+ 
+02/01/2023 02:33:48PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+     
+Actual: ZIVO Expected:ZIVO
+ 
+02/01/2023 02:33:48PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+     
+Actual: <class 'AttributeError'> Expected: <class 'AttributeError'>
+ 
+02/01/2023 02:33:48PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    
+Actual: <class 'float'> Expected: (float and not None)
+ 
+02/01/2023 02:33:48PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    
+Actual: <class 'float'> Expected: (float and not None)
+ 
+02/01/2023 02:33:48PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    
+Actual: 101 Expected:(x > 0 and not None)
+ 
+02/01/2023 02:33:48PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: calc_apartment_price
+    Description: Test Calculating apartment price in Herzelia
+    
+Actual: 106200 Expected:(x > 0 and not None)
+ 
+02/01/2023 02:35:03PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+    
+Actual: ZIVO Expected:ZIVO
+ 
+02/01/2023 02:35:03PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+     
+Actual: ZIVO Expected:ZIVO
+ 
+02/01/2023 02:35:03PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+     
+Actual: <class 'AttributeError'> Expected: <class 'AttributeError'>
+ 
+02/01/2023 02:35:03PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    
+Actual: <class 'float'> Expected: (float and not None)
+ 
+02/01/2023 02:35:03PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    
+Actual: <class 'float'> Expected: (float and not None)
+ 
+02/01/2023 02:35:03PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    
+Actual: 101 Expected:(x > 0 and not None)
+ 
+02/01/2023 02:35:03PM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: calc_apartment_price
+    Description: Test Calculating apartment price in Herzelia
+    malformed node or string: None
+ 
+02/01/2023 02:36:13PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+    
+Actual: ZIVO Expected:ZIVO
+ 
+02/01/2023 02:36:13PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+     
+Actual: ZIVO Expected:ZIVO
+ 
+02/01/2023 02:36:13PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+     
+Actual: <class 'AttributeError'> Expected: <class 'AttributeError'>
+ 
+02/01/2023 02:36:13PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    
+Actual: <class 'float'> Expected: (float and not None)
+ 
+02/01/2023 02:36:13PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    
+Actual: <class 'float'> Expected: (float and not None)
+ 
+02/01/2023 02:36:13PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    
+Actual: 101 Expected:(x > 0 and not None)
+ 
+02/01/2023 02:36:13PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: calc_apartment_price
+    Description: Test Calculating apartment price in Herzelia
+    
+Actual: 106200 Expected:(x > 0 and not None)
+ 
+02/01/2023 02:37:06PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: calc_apartment_price
+    Description: Test Calculating apartment price in Herzelia
+    
+Actual: 106200 Expected:(x > 0 and not None)
+ 
+02/01/2023 02:39:55PM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: calc_apartment_price
+    Description: Test Calculating apartment price in Herzelia
+    tuple index out of range
+ 
+02/01/2023 02:41:59PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: calc_apartment_price
+    Description: Test Calculating apartment price in Herzelia
+    
+Actual: 106200 Expected:(x > 0 and not None)
+ 
+02/01/2023 02:42:14PM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: calc_apartment_price
+    Description: Test Calculating apartment price in Herzelia
+    tuple index out of range
+ 
+Traceback (most recent call last):
+  File "D:\PythonRepos\ApartmentTest\Apatrment_py_test\test_aprtm_herz.py", line 133, in test_calc_apartment_price
+    x = herz.calc_apartment_price()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PythonRepos\ApartmentTest\Apartment\aprtm_herz.py", line 59, in calc_apartment_price
+    raise e
+  File "D:\PythonRepos\ApartmentTest\Apartment\aprtm_herz.py", line 50, in calc_apartment_price
+    if v[4] < self.meters >= v[1]:
+       ~^^^
+IndexError: tuple index out of range
+02/01/2023 02:48:59PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+    
+Actual: ZIVO Expected:ZIVO
+ 
+02/01/2023 02:48:59PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+     
+Actual: ZIVO Expected:ZIVO
+ 
+02/01/2023 02:48:59PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+     
+Actual: <class 'AttributeError'> Expected: <class 'AttributeError'>
+ 
+02/01/2023 02:48:59PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    
+Actual: <class 'float'> Expected: (float and not None)
+ 
+02/01/2023 02:48:59PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    
+Actual: <class 'float'> Expected: (float and not None)
+ 
+02/01/2023 02:48:59PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    
+Actual: 101 Expected:(x > 0 and not None)
+ 
+02/01/2023 02:48:59PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: calc_apartment_price
+    Description: Test Calculating apartment price in Herzelia
+    
+Actual: 106200 Expected:(x > 0 and not None)
+ 
