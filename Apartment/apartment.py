@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 
 
 class Apartment(ABC):
-    load_dotenv()
     def __init__(self, rooms):
         """
         Name: Artiom

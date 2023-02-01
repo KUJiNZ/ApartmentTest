@@ -7,7 +7,7 @@ from Apartment.log import Log
 from Apartment.aprtm_haifa import AprtmHaifa
 
 # LOGGER
-LOG = Log("__haifaytest__ ", "test_herz_log.log")
+LOG = Log("__haifaytest__ ", "test_haifa_log.log")
 logger = LOG.logger
 
 

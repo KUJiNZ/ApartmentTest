@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 
 
 class Arnona(ABC):
-    load_dotenv()
     def __int__(self):
         """
         Name: Artiom

@@ -16,7 +16,6 @@ class AprtmHaifa(Apartment, Arnona):
         Description: init of AprtmHaifa
         :param rooms: metrage of apartment rooms
         """
-
         super().__init__(rooms)
 
     def calc_arnona(self):

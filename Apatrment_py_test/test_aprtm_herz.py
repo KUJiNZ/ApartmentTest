@@ -122,7 +122,7 @@ def test_calc_apartment_price(herz):
     try:
         x = herz.calc_apartment_price()
         assert x > 0 and not None
-        logger.info(f"{test_calc_arnona.__doc__}")
+        logger.info(f"{test_calc_apartment_price.__doc__}")
     except Exception as e:
-        logger.error(f"{test_calc_arnona.__doc__}{e}")
+        logger.error(f"{test_calc_apartment_price.__doc__}{e}")
         raise

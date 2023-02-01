@@ -701,3 +701,28 @@
     Function Name: test_calc_arnona
     Description: Testing Calculating arnona in Haifa apartment
      
+02/01/2023 01:45:30PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Haifa apartment
+     
+02/01/2023 01:54:56PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+     
+02/01/2023 01:55:24PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+     
+02/01/2023 01:55:42PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: calc_apartment_price
+    Description: Test Calculating apartment price in Herzelia
+     
+02/01/2023 01:56:24PM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: calc_apartment_price
+    Description: Test Calculating apartment price in Herzelia
+    assert (105000 < 0) 
