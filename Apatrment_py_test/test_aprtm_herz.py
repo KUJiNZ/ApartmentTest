@@ -1,5 +1,4 @@
 import ast
-
 import pytest
 import os
 from dotenv import load_dotenv
@@ -9,7 +8,8 @@ from Apartment.aprtm_herz import AprtmHerz
 # LOGGER
 LOG = Log("__herzytest__ ", "test_herz_log.log")
 logger = LOG.logger
-load_dotenv(dotenv_path='/Apatrment_py_test/.env')
+os.chdir("D:/PythonRepos/ApartmentTest/Apatrment_py_test")
+load_dotenv('.env.test')
 
 @pytest.fixture
 def herz():
@@ -91,7 +91,7 @@ def test_calc_arnona(herz):
     try:
         x = herz.calc_arnona()
         print(x)
-        assert type(x) is float and not None
+        assert type(x) is float and x is not None
         logger.info(f"{test_calc_arnona.__doc__}")
     except Exception as e:
         logger.error(f"{test_calc_arnona.__doc__}{e}")

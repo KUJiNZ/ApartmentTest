@@ -6,7 +6,7 @@ import os
 
 if __name__ == '__main__':
     # ENV LOADER
-    load_dotenv('.env')
+    load_dotenv('.env.development')
 
 
     rooms_haifa = ast.literal_eval(os.getenv('ROOMS_HAIFA'))

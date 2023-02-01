@@ -68,5 +68,6 @@ class AprtmHerz(Apartment, Arnona):
         try:
             for m in self.rooms.values():
                 self.meters += m
+            return self.meters
         except Exception as e:
             raise e

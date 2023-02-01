@@ -14,7 +14,7 @@ logger = LOG.logger
 @pytest.fixture
 def haifa():
     # ENV FILE
-    load_dotenv('.env')
+    load_dotenv('.env.test')
     kitchen_type = os.getenv('KITCHEN_TYPE_HAIFA')
     # HAIFA ClASS
     rooms = ast.literal_eval(os.getenv('ROOMS_HERZ'))
@@ -90,7 +90,7 @@ def test_calc_arnona(haifa):
     """
     try:
         x = haifa.calc_arnona()
-        assert type(x) is list and not None
+        assert type(x) is float and not None
         logger.info(f"{test_calc_arnona.__doc__}")
     except Exception as e:
         logger.error(f"{test_calc_arnona.__doc__}{e}")

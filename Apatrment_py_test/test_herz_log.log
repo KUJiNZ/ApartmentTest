@@ -585,3 +585,119 @@
     Function Name: test_calc_arnona
     Description: Testing Calculating arnona in Herzelia apartment
     assert (-122900 > 0) 
+02/01/2023 01:21:37PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHaifa
+     
+02/01/2023 01:21:37PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHaifa
+     
+02/01/2023 01:21:37PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHaifa
+     
+02/01/2023 01:21:37PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Haifa apartment
+     
+02/01/2023 01:21:37PM __haifaytest__ ERROR: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Haifa apartment
+    assert (<class 'float'> is list)
+ +  where <class 'float'> = type(2580.0) 
+02/01/2023 01:21:38PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Haifa apartment
+     
+02/01/2023 01:22:33PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHaifa
+     
+02/01/2023 01:22:33PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHaifa
+     
+02/01/2023 01:22:33PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHaifa
+     
+02/01/2023 01:22:33PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Haifa apartment
+     
+02/01/2023 01:22:33PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Haifa apartment
+     
+02/01/2023 01:22:33PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Haifa apartment
+     
+02/01/2023 01:24:04PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+     
+02/01/2023 01:24:18PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+     
+02/01/2023 01:24:23PM __herzytest__ ERROR: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Herzelia apartment
+    assert (None is not None) 
+02/01/2023 01:25:11PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+     
+02/01/2023 01:26:03PM __herzytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHerz
+     
+02/01/2023 01:33:17PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHaifa
+     
+02/01/2023 01:33:17PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHaifa
+     
+02/01/2023 01:33:17PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: kitchen
+    Description: Testing setter of kitchen in class AprtmHaifa
+     
+02/01/2023 01:33:17PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Haifa apartment
+     
+02/01/2023 01:33:17PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Haifa apartment
+     
+02/01/2023 01:33:17PM __haifaytest__ INFO: 
+    Name: Artiom
+    Function Name: test_calc_arnona
+    Description: Testing Calculating arnona in Haifa apartment
+     

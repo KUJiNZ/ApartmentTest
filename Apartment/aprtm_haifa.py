@@ -7,7 +7,7 @@ import os
 
 
 class AprtmHaifa(Apartment, Arnona):
-    load_dotenv('.env')
+    load_dotenv('.env.development')
 
     def __init__(self, rooms):
         """
